@@ -23,6 +23,21 @@
     <ClCompile Include="src\SnippetHelloWorld.cpp" />
     <ClCompile Include="src\SnippetHelloWorldRender.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Bin\glut32.dll" />
+    <None Include="..\Bin\nvToolsExt64_1.dll" />
+    <None Include="..\Bin\PhysX3CharacterKinematicDEBUG_x64.dll" />
+    <None Include="..\Bin\PhysX3CommonDEBUG_x64.dll" />
+    <None Include="..\Bin\PhysX3CookingDEBUG_x64.dll" />
+    <None Include="..\Bin\PhysX3DEBUG_x64.dll" />
+    <None Include="..\Bin\PhysX3GpuCHECKED_x64.dll" />
+    <None Include="..\Bin\PhysX3GpuDEBUG_x64.dll" />
+    <None Include="..\Bin\PhysX3GpuPROFILE_x64.dll" />
+    <None Include="..\Bin\PhysX3Gpu_x64.dll" />
+    <None Include="..\Bin\PhysXDevice64.dll" />
+    <None Include="..\Bin\PxFoundationDEBUG_x64.dll" />
+    <None Include="..\Bin\PxPvdSDKDEBUG_x64.dll" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{BAEE6A20-07E0-4E49-A91B-FA9E015CD613}</ProjectGuid>
@@ -127,8 +142,8 @@
       <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>XCOPY "./../Include/PxShared/bin\vc15win64\PxFoundationDEBUG_x64.dll" "$(OutDir)" /D /Y 
-XCOPY "./../Include/PxShared/bin\vc15win64\PxPvdSDKDEBUG_x64.dll" "$(OutDir)" /D /Y</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
