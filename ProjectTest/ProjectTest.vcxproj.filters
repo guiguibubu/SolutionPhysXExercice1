@@ -26,18 +26,44 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Bin\glut32.dll" />
-    <None Include="..\Bin\nvToolsExt64_1.dll" />
-    <None Include="..\Bin\PhysX3CharacterKinematicDEBUG_x64.dll" />
-    <None Include="..\Bin\PhysX3CommonDEBUG_x64.dll" />
-    <None Include="..\Bin\PhysX3CookingDEBUG_x64.dll" />
-    <None Include="..\Bin\PhysX3DEBUG_x64.dll" />
-    <None Include="..\Bin\PhysX3Gpu_x64.dll" />
-    <None Include="..\Bin\PhysX3GpuCHECKED_x64.dll" />
-    <None Include="..\Bin\PhysX3GpuDEBUG_x64.dll" />
-    <None Include="..\Bin\PhysX3GpuPROFILE_x64.dll" />
-    <None Include="..\Bin\PhysXDevice64.dll" />
-    <None Include="..\Bin\PxFoundationDEBUG_x64.dll" />
-    <None Include="..\Bin\PxPvdSDKDEBUG_x64.dll" />
+    <None Include="..\Bin\glut32.dll">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="..\Bin\nvToolsExt64_1.dll">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="..\Bin\PhysX3CharacterKinematicDEBUG_x64.dll">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="..\Bin\PhysX3CommonDEBUG_x64.dll">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="..\Bin\PhysX3CookingDEBUG_x64.dll">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="..\Bin\PhysX3DEBUG_x64.dll">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="..\Bin\PhysX3Gpu_x64.dll">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="..\Bin\PhysX3GpuCHECKED_x64.dll">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="..\Bin\PhysX3GpuDEBUG_x64.dll">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="..\Bin\PhysX3GpuPROFILE_x64.dll">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="..\Bin\PhysXDevice64.dll">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="..\Bin\PxFoundationDEBUG_x64.dll">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+    <None Include="..\Bin\PxPvdSDKDEBUG_x64.dll">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
   </ItemGroup>
 </Project>

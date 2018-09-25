@@ -72,17 +72,16 @@ PxRigidDynamic* createDynamic(const PxTransform& t, const PxGeometry& geometry, 
 void createStack(const PxTransform& t, PxU32 size, PxReal halfExtent)
 {
 	PxShape* shape = gPhysics->createShape(PxBoxGeometry(halfExtent, halfExtent, halfExtent), *gMaterial);
-	for(PxU32 i=0; i<size;i++)
-	{
-		for(PxU32 j=0;j<size-i;j++)
-		{
-			PxTransform localTm(PxVec3(PxReal(j*2) - PxReal(size-i), PxReal(i*2+1), 0) * halfExtent);
+	//for(PxU32 i=0; i<size;i++) {
+		//for(PxU32 j=0;j<size-i;j++) {
+			//PxTransform localTm(PxVec3(PxReal(size -i), PxReal(i*2+1), 0) * halfExtent);
+         PxTransform localTm(PxVec3(PxReal(0), PxReal(size*3), 0) * halfExtent);
 			PxRigidDynamic* body = gPhysics->createRigidDynamic(t.transform(localTm));
 			body->attachShape(*shape);
 			PxRigidBodyExt::updateMassAndInertia(*body, 10.0f);
 			gScene->addActor(*body);
-		}
-	}
+		//}
+	//}
 	shape->release();
 }
 
@@ -115,7 +114,7 @@ void initPhysics(bool interactive)
 	PxRigidStatic* groundPlane = PxCreatePlane(*gPhysics, PxPlane(0,1,0,0), *gMaterial);
 	gScene->addActor(*groundPlane);
 
-	for(PxU32 i=0;i<5;i++)
+	for(PxU32 i=0;i<1;i++)
 		createStack(PxTransform(PxVec3(0,0,stackZ-=10.0f)), 10, 2.0f);
 
 	if(!interactive)
