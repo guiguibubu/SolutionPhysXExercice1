@@ -135,7 +135,7 @@
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>./../Include/PxShared/lib/vc15win64;./../Include/SnippetUtils/Lib;./../Include/SnippetRender/Lib;./../API_PhysX/Lib;./../Include/Graphics/lib/win64/glut;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>PhysX3CharacterKinematicDEBUG_x64.lib;PhysX3CommonDEBUG_x64.lib;PhysX3CookingDEBUG_x64.lib;PhysX3DEBUG_x64.lib;PhysX3ExtensionsDEBUG.lib;PhysX3VehicleDEBUG.lib;SceneQueryDEBUG.lib;SimulationControllerDEBUG.lib;glut32.lib;PsFastXmlDEBUG_x64.lib;PxFoundationDEBUG_x64.lib;PxPvdSDKDEBUG_x64.lib;PxTaskDEBUG_x64.lib;SnippetRenderDEBUG.lib;SnippetUtilsDEBUG.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>PhysX3CharacterKinematicDEBUG_x64.lib;PhysX3CommonDEBUG_x64.lib;PhysX3CookingDEBUG_x64.lib;PhysX3DEBUG_x64.lib;PhysX3ExtensionsDEBUG.lib;PhysX3VehicleDEBUG.lib;SceneQueryDEBUG.lib;SimulationControllerDEBUG.lib;glut32.lib;PsFastXmlDEBUG_x64.lib;PxFoundationDEBUG_x64.lib;PxPvdSDKDEBUG_x64.lib;PxTaskDEBUG_x64.lib;RenderDEBUG.lib;SnippetUtilsDEBUG.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetName).exe</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
